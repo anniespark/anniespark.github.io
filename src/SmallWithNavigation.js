@@ -26,7 +26,7 @@ export default function SmallWithNavigation() {
           <Link href={'#'}>Skills</Link>
           <Link href={'#'}>About Me</Link>
         </Stack>
-        <Text>© 2022 Annie Koo. All rights reserved</Text>
+        <Text>© {new Date().getFullYear()} Annie Koo. All rights reserved</Text>
       </Container>
     </Box>
   );
