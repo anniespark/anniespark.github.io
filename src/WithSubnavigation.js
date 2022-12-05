@@ -78,15 +78,17 @@ export default function WithSubnavigation() {
             LinkedIn
           </Button>
           <Button
+            as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
-            bg={'pink.400'}
-            href={'#'}
+            bg={'#F56565'}
             _hover={{
-              bg: 'pink.300',
-            }}>
+              bg: '#e43c3c',
+            }}
+            href={'https://drive.google.com/uc?id=1XnCby-JrSYyCc7qmUrPJf6EzrRsvJp6S'}
+            target="_blank">
             Resume
           </Button>
         </Stack>
@@ -251,11 +253,26 @@ const NAV_ITEMS = [
     children: [
       {
         label: 'National Pen',
-        subLabel: 'Trending Design to inspire you',
+        subLabel: 'July 2020 to Present',
         href: '/experiences/national-pen',
       },
       {
-        label: 'New & Noteworthy',
+        label: 'Events.com',
+        subLabel: 'Up-and-coming Designers',
+        href: '#',
+      },
+      {
+        label: 'Events.com',
+        subLabel: 'Up-and-coming Designers',
+        href: '#',
+      },
+      {
+        label: 'Events.com',
+        subLabel: 'Up-and-coming Designers',
+        href: '#',
+      },
+      {
+        label: 'Events.com',
         subLabel: 'Up-and-coming Designers',
         href: '#',
       },
@@ -263,18 +280,7 @@ const NAV_ITEMS = [
   },
   {
     label: 'Skills',
-    children: [
-      {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
-      },
-      {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
-      },
-    ],
+    href: '',
   },
   {
     label: 'About Me',

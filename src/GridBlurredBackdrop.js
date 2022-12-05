@@ -11,36 +11,39 @@ import {
 
 const testimonials = [
   {
-    name: 'Brandon P.',
-    role: 'Chief Marketing Officer',
+    name: 'User Research and Analysis',
     content:
-      'It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed!',
+      'Customer Feedback, User Interview, Usability Study, Competitive Analysis - to empathize with the user for human-centered design & define the problem',
     avatar:
-      'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+      'https://drive.google.com/uc?id=17Ly0dHBeLw18CA7ggOZOPNllAYDXWQ6O',
   },
   {
-    name: 'Krysta B.',
-    role: 'Entrepreneur',
+    name: 'Ideation & Concept Design',
     content:
-      "I didn't even need training. We've used EEZY for the last five years. I have gotten at least 50 times the value from EEZY. I made back the purchase price in just 48 hours!",
+      "Reviews with Stakeholders, Sketches, Low Fidelity Wireframes, Information Architecture, Story Shell & Epic Creation in JIRA - generate ideas and have an initial idea",
     avatar:
-      'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+      'https://drive.google.com/uc?id=1Vpyhh0zkZQe45SZGud7snWbsfy6yyKG2',
   },
   {
-    name: 'Darcy L.',
-    role: 'Movie star',
+    name: 'Prototype',
     content:
-      "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, EEZY is the coolest, most happening thing around! I love EEZY!",
+      "High Fidelity Prototypes & JIRA story writing - turn the initial idea into a concrete solution",
     avatar:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80',
+      'https://drive.google.com/uc?id=1f8TCbWj90Dq0J4q0g2TjogFNWPow4szW',
   },
   {
-    name: 'Daniel T.',
-    role: 'Musician',
+    name: 'Usability Tests & Reviews',
     content:
-      'I am so pleased with this product. EEZY is both attractive and highly adaptable. Without EEZY, we would have gone bankrupt by now. Thank you for creating this product!',
+      'Usability Tests, Stakeholder Reviews, Product Design Review - evaluate and test the design solution',
     avatar:
-      'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+      'https://drive.google.com/uc?id=1Vpyhh0zkZQe45SZGud7snWbsfy6yyKG2',
+  },
+  {
+    name: 'Fine-Tuning',
+    content:
+      'Completion of high-fidelity interactive prototype, JIRA story business rules, information architecture - finalize based on evaluation before moving onto development',
+    avatar:
+      'https://drive.google.com/uc?id=1Awz1rLemjnWtu1m1O3R4K7LeR1YGV39y',
   },
 ];
 
@@ -101,30 +104,30 @@ function TestimonialCard(props: TestimonialCardProps) {
         direction={'column'}
         textAlign={'left'}
         justifyContent={'space-between'}>
+        <chakra.p pb="3" fontFamily={'system-ui'} fontWeight={'bold'} fontSize={24}>
+          {name}
+          
+          <chakra.span
+            fontFamily={'system-ui'}
+            fontWeight={'medium'}
+            color={'gray.500'}>
+            {role}
+          </chakra.span>
+        </chakra.p>
         <chakra.p
-          fontFamily={'Inter'}
-          fontWeight={'medium'}
+          fontFamily={'system-ui'}
+          fontWeight={'400'}
           fontSize={'15px'}
           pb={4}>
           {content}
         </chakra.p>
-        <chakra.p fontFamily={'Work Sans'} fontWeight={'bold'} fontSize={14}>
-          {name}
-          <chakra.span
-            fontFamily={'Inter'}
-            fontWeight={'medium'}
-            color={'gray.500'}>
-            {' '}
-            - {role}
-          </chakra.span>
-        </chakra.p>
       </Flex>
       <Avatar
         src={avatar}
-        height={'80px'}
-        width={'80px'}
+        height={'150px'}
+        width={'150px'}
         alignSelf={'center'}
-        m={{ base: '0 0 35px 0', md: '0 0 0 50px' }}
+        m={{ base: '0 0 30px 0', md: '0 0 0 25px' }}
       />
     </Flex>
   );
@@ -140,32 +143,27 @@ export default function GridBlurredBackdrop() {
       width={'full'}>
       <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
         <chakra.h3
-          fontFamily={'Work Sans'}
+          fontFamily={'system-ui'}
           fontWeight={'bold'}
           fontSize={20}
           textTransform={'uppercase'}
           color={'purple.400'}>
-          People love us
         </chakra.h3>
         <chakra.h1
           py={5}
           fontSize={48}
-          fontFamily={'Work Sans'}
+          fontFamily={'system-ui'}
           fontWeight={'bold'}
           color={useColorModeValue('gray.700', 'gray.50')}>
-          You're in good company
+          My Design Process
         </chakra.h1>
         <chakra.h2
           margin={'auto'}
-          width={'70%'}
-          fontFamily={'Inter'}
-          fontWeight={'medium'}
+          width={'100%'}
+          fontFamily={'system-ui'}
+          fontWeight={'400'}
           color={useColorModeValue('gray.500', 'gray.400')}>
-          See why over{' '}
-          <chakra.strong color={useColorModeValue('gray.700', 'gray.50')}>
-            150,000+
-          </chakra.strong>{' '}
-          influencers use EEZY to manage their social media content!
+          These are basic free-flowing steps I take in approaching a design solution in an agile environment - with a willingness to go back in forth between each step - and even start all over again :) in order to reach the best solution. 
         </chakra.h2>
       </Box>
       <SimpleGrid
