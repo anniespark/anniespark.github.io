@@ -106,7 +106,7 @@ function TestimonialCard(props: TestimonialCardProps) {
         justifyContent={'space-between'}>
         <chakra.p pb="3" fontFamily={'system-ui'} fontWeight={'bold'} fontSize={24}>
           {name}
-          
+
           <chakra.span
             fontFamily={'system-ui'}
             fontWeight={'medium'}
@@ -163,7 +163,7 @@ export default function GridBlurredBackdrop() {
           fontFamily={'system-ui'}
           fontWeight={'400'}
           color={useColorModeValue('gray.500', 'gray.400')}>
-          These are basic free-flowing steps I take in approaching a design solution in an agile environment - with a willingness to go back in forth between each step - and even start all over again :) in order to reach the best solution. 
+          These are basic free-flowing steps I take in approaching a design solution in an agile environment - with a willingness to go back in forth between each step - and even start all over again :) in order to reach the best solution.
         </chakra.h2>
       </Box>
       <SimpleGrid
@@ -171,10 +171,15 @@ export default function GridBlurredBackdrop() {
         spacing={'20'}
         mt={16}
         mx={'auto'}>
-        {testimonials.map((cardInfo, index) => (
+        {testimonials.map((cardInfo, index) => {
+          if (index < testimonials.length - 1)
+          return (
           <TestimonialCard {...cardInfo} index={index} />
-        ))}
+        )})}
       </SimpleGrid>
+      <Flex justifyContent="center" mt="20">
+        <TestimonialCard {...testimonials[testimonials.length - 1]} index={testimonials.length} />
+      </Flex>
       <Box>
         <Icon viewBox="0 0 40 35" mt={14} boxSize={10} color={'purple.400'}>
           <path
