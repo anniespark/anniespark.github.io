@@ -1,5 +1,5 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
-import GridBlurredBackdrop from './GridBlurredBackdrop'
+import GridBlurredBackdrop from './landing/GridBlurredBackdrop'
 
 function Body() {
   return (

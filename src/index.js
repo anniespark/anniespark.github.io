@@ -8,6 +8,7 @@ import {
   createHashRouter,
   RouterProvider,
   Route,
+  Navigate,
 } from "react-router-dom";
 import Landing from './Landing';
 import Experiences from './Experiences';
@@ -15,7 +16,7 @@ import NationalPen from './experiences/NationalPen';
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: "",
     element: <App />,
     children: [
       {

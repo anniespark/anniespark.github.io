@@ -12,11 +12,25 @@ import {
   createIcon,
   IconProps,
   useColorModeValue,
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
 } from '@chakra-ui/react';
 
 export default function CallToActionWithVideo() {
   return (
     <Container maxW={'7xl'}>
+    
+    <Alert status='success'>
+    <Box w='100%'>
+      <AlertTitle>Portfolio Under Construction!</AlertTitle>
+      <AlertDescription>
+        I am actively redesigning and moving over my portfolio from squarespace to here, learning how to use Chakra UI as I develop this site. Meanwhile, I would love to talk further and present my experiences to you in a conversation. Please see the link to LinkedIn in my nav bar to contact me.
+      </AlertDescription>
+    </Box>
+    
+    </Alert>
       <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}

@@ -22,6 +22,8 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons';
 
+ 
+
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
@@ -249,12 +251,12 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: 'Experience',
-    href: '/experiences',
+    href: '/#/experiences',
     children: [
       {
         label: 'National Pen',
         subLabel: 'July 2020 to Present',
-        href: '/experiences/national-pen',
+        href: '/#/experiences/national-pen',
       },
       {
         label: 'Events.com',
