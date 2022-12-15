@@ -26,7 +26,7 @@ export default function CallToActionWithVideo() {
     <Box w='100%'>
       <AlertTitle>Portfolio Under Construction!</AlertTitle>
       <AlertDescription>
-        I am actively redesigning and moving over my portfolio from squarespace to here, learning how to use Chakra UI as I develop this site. Meanwhile, I would love to talk further and present my experiences to you in a conversation. Please see the link to LinkedIn in my nav bar to contact me.
+        I am actively redesigning and moving over my portfolio from squarespace to here, learning how to use React as I develop this site. Meanwhile, I would love to talk further and present my experiences to you in a conversation. Please see the link to LinkedIn in my nav bar to contact me.
       </AlertDescription>
     </Box>
     
@@ -66,6 +66,7 @@ export default function CallToActionWithVideo() {
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
+            justify="center"
             direction={{ base: 'column', sm: 'row' }}>
             <Button
               rounded={'full'}
