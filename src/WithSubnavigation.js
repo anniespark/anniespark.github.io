@@ -261,7 +261,7 @@ const NAV_ITEMS = [
       {
         label: 'Events.com',
         subLabel: 'Up-and-coming Designers',
-        href: '#',
+        href: '/#/experiences/eventsdotcom',
       },
       {
         label: 'Events.com',

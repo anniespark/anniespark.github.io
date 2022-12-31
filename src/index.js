@@ -13,6 +13,7 @@ import {
 import Landing from './Landing';
 import Experiences from './Experiences';
 import NationalPen from './experiences/NationalPen';
+import Events from './experiences/Events';
 
 const router = createHashRouter([
   {
@@ -30,6 +31,10 @@ const router = createHashRouter([
       {
         path: "experiences/national-pen",
         element: <NationalPen/>,
+      },
+      {
+        path: "experiences/eventsdotcom",
+        element: <Events/>,
       },
     ]
   },
