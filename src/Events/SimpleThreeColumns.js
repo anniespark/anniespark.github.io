@@ -43,23 +43,23 @@ export default function SimpleThreeColumns() {
     <Container maxW={'7xl'} py='12' >
       <SimpleGrid  columns={{ base: 1, md: 3 }} spacing={30} >
         <Feature 
-          icon={<Icon as={RiNumber1} color={'purple.500'} w={8} h={8} /> }
-          iconBg={useColorModeValue('purple.100', 'purple.900')}
+          icon={<Icon as={RiNumber1} color={'blue.500'} w={8} h={8} /> }
+          iconBg={useColorModeValue('blue.100', 'blue.900')}
           title={'New Features'}
           text={
             'Upon receiving customer feedback, spearhead designing these new features from start to finish to meet more of our users needs'
           }
         />
         <Feature
-          icon={<Icon as={RiNumber2} color={'purple.500'} w={8} h={8} />}
-          iconBg={useColorModeValue('purple.100', 'purple.900')}
+          icon={<Icon as={RiNumber2} color={'blue.500'} w={8} h={8} />}
+          iconBg={useColorModeValue('blue.100', 'blue.900')}
           title={'Enhancements'}
           text={
 'Based on continual feedback from our users in collaboration with the customer success team or user studies, enhance our existing features.'          }
         />
         <Feature
-          icon={<Icon as={RiNumber3} color={'purple.500'} w={8} h={8} />}
-          iconBg={useColorModeValue('purple.100', 'purple.900')}
+          icon={<Icon as={RiNumber3} color={'blue.500'} w={8} h={8} />}
+          iconBg={useColorModeValue('blue.100', 'blue.900')}
           title={'Usability'}
           text={
 'Conduct in-person and remote usability tests. Based on results, redesign our current features to optimize user experience, overhauling our current design to make our product more user friendly'          }

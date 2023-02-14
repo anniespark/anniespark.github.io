@@ -60,7 +60,7 @@ export default function SplitWithImage() {
                 my={"5"}
                 mr={["","","10"]}
                 src={
-                  'https://drive.google.com/uc?id=1oHBxKknptpnT8fDzOShmZBfHKMxShc5h'
+                  'https://drive.google.com/uc?id=13d7STwyKje5UvZxLySZb3giX0YEXkZSz'
                 }
                 objectFit={'cover'}
               />

@@ -89,7 +89,7 @@ export default function WithSubnavigation() {
             _hover={{
               bg: '#e43c3c',
             }}
-            href={'https://drive.google.com/uc?id=1XnCby-JrSYyCc7qmUrPJf6EzrRsvJp6S'}
+            href={'https://drive.google.com/uc?id=1KGeEkhN2ye4vtnn940LLSy4d0-dOF0GU'}
             target="_blank">
             Resume
           </Button>
@@ -252,33 +252,7 @@ const NAV_ITEMS = [
   {
     label: 'Experience',
     href: '/#/experiences',
-    children: [
-      {
-        label: 'National Pen',
-        subLabel: 'July 2020 to Present',
-        href: '/#/experiences/national-pen',
-      },
-      {
-        label: 'Events.com',
-        subLabel: 'Up-and-coming Designers',
-        href: '/#/experiences/eventsdotcom',
-      },
-      {
-        label: 'Events.com',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
-      },
-      {
-        label: 'Events.com',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
-      },
-      {
-        label: 'Events.com',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
-      },
-    ],
+    
   },
   {
     label: 'Skills',

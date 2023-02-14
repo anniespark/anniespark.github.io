@@ -12,8 +12,9 @@ import {
   createIcon,
   IconProps,
   useColorModeValue,
+  LinkOverlay,
   Alert,
-  AlertIcon,
+ //AlertIcon,
   AlertTitle,
   AlertDescription,
 } from '@chakra-ui/react';
@@ -24,7 +25,7 @@ export default function CallToActionWithVideo() {
     
     <Alert status='success'>
     <Box w='100%'>
-      <AlertTitle>Portfolio Under Construction!</AlertTitle>
+      <AlertTitle>Portfolio In Progress!</AlertTitle>
       <AlertDescription>
         I am actively redesigning and moving over my portfolio from squarespace to here, learning how to use React as I develop this site. Meanwhile, I would love to talk further and present my experiences to you in a conversation. Please see the link to LinkedIn in my nav bar to contact me.
       </AlertDescription>
@@ -68,6 +69,7 @@ export default function CallToActionWithVideo() {
             spacing={{ base: 4, sm: 6 }}
             justify="center"
             direction={{ base: 'column', sm: 'row' }}>
+          
             <Button
               rounded={'full'}
               size={'lg'}
@@ -75,9 +77,13 @@ export default function CallToActionWithVideo() {
               px={6}
               colorScheme={'red'}
               bg={'red.400'}
-              _hover={{ bg: 'red.500' }}>
+              _hover={{ bg: 'red.500' }}
+              href={'/#/experiences/'}
+              target={'_self'}>
               See My Experience
             </Button>
+
+            
             <Button
               rounded={'full'}
               size={'lg'}
